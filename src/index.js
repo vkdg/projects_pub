@@ -8,7 +8,6 @@ import Mainpage from './elements/Mainpage/Mainpage'
 
 import Bello from './projects/bello/Bello'
 import Kudapizza from './projects/kudapizza/Kudapizza'
-import Messenger from './projects/messenger/Messenger'
 
 const application = (
   <React.StrictMode>
