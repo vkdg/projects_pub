@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://vkdg.github.io/projects/static/css/main.1f9c7f2f.css",
-    "main.js": "https://vkdg.github.io/projects/static/js/main.e87312cb.js",
+    "main.css": "https://vkdg.github.io/projects/static/css/main.f730459e.css",
+    "main.js": "https://vkdg.github.io/projects/static/js/main.b24742cd.js",
     "static/media/promo-1.svg": "https://vkdg.github.io/projects/static/media/promo-1.0a17994bccc1f5c4a1eea7d945df1a6c.svg",
     "static/media/meetsservice-image.jpg": "https://vkdg.github.io/projects/static/media/meetsservice-image.637c2e64cc0be1dbd073.jpg",
     "static/media/hero.png": "https://vkdg.github.io/projects/static/media/hero.1a4db68b99a8022836a5.png",
@@ -155,11 +155,11 @@
     "static/media/how-it-works-line.svg": "https://vkdg.github.io/projects/static/media/how-it-works-line.6d54f3647130495f331f.svg",
     "static/media/social-linkedin.svg": "https://vkdg.github.io/projects/static/media/social-linkedin.772adc91a8457dac3b33.svg",
     "static/media/social-facebook.svg": "https://vkdg.github.io/projects/static/media/social-facebook.f47fe7dba5f7594206ed.svg",
-    "main.1f9c7f2f.css.map": "https://vkdg.github.io/projects/static/css/main.1f9c7f2f.css.map",
-    "main.e87312cb.js.map": "https://vkdg.github.io/projects/static/js/main.e87312cb.js.map"
+    "main.f730459e.css.map": "https://vkdg.github.io/projects/static/css/main.f730459e.css.map",
+    "main.b24742cd.js.map": "https://vkdg.github.io/projects/static/js/main.b24742cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f9c7f2f.css",
-    "static/js/main.e87312cb.js"
+    "static/css/main.f730459e.css",
+    "static/js/main.b24742cd.js"
   ]
 }
