@@ -1,0 +1,61 @@
+.SecureBlock {
+    background-color: #F9F5F2;
+    padding: 85px 0;
+    &__wrapper {
+        max-width: var(--width-container);
+        padding: var(--padding-container);
+        margin: 0 auto;
+    }
+    &__content {
+        display: grid;
+        grid-gap: 144px;
+        grid-template-columns: repeat(2, 1fr);
+        &__image {
+            &__wrapper {
+                background-color: white;
+                padding: 40px;
+            }
+            &__content {
+                background-image: url('../../resources/secureblock-image.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                height: 380px;
+                width: 100%;
+            }
+            &__description {
+                color: var(--color-text-second);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                margin-top: 20px;
+                span {
+                    color: red;
+                }
+            }
+        }
+        &__text {
+            &__subtitle {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16.8px;
+                color: var(--color-theme);
+                text-transform: uppercase;
+            }
+            &__title {
+                font-weight: 600;
+                font-size: 44px;
+                line-height: 52px;
+                margin: 26px 0 19px;
+                padding: 0;
+            }
+            &__caption {
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 30px;
+                color: var(--color-text-second);
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

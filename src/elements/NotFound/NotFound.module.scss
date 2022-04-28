@@ -1,0 +1,42 @@
+.NotFound {
+    padding: 50px 0 100px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__image {
+        background-image: url('./NotFound.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 100%;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-size: 40px;
+        color: var(--text-color);
+        text-align: center;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    &__paragraph {
+        font-size: 16px;
+        line-height: 135%;
+        color: var(--text-color);
+        text-align: center;
+        margin: 0;
+        box-sizing: border-box;
+        margin-top: 15px;
+    }
+    &__link {
+        margin-top: 15px;
+        color: var(--accent-color);
+        text-decoration: none;
+        &:hover {
+            color: var(--accent-color-hover-5);
+        }
+    }
+}

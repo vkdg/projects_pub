@@ -1,0 +1,115 @@
+.SafeHands {
+    padding: 90px 0 100px;
+    background-color: var(--color-safehands-background);
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -110px;
+        left: calc(50% - (297px / 2) - 60px);
+        width: 454px;
+        height: 297px;
+        background-image: url('../../resources/safehands-umbrella.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        pointer-events: none;
+        z-index: 1;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -36px;
+        right: 0;
+        width: 181px;
+        height: 184px;
+        background-image: url('../../resources/safehands-dog.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        pointer-events: none;
+        z-index: 1;
+    }
+    &__wrapper {
+        max-width: var(--width-container);
+        padding: var(--padding-container);
+        margin: 0 auto;
+    }
+    &__content {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__subtitle, &__title, &__description {
+        text-align: center;
+        max-width: 1100px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.8px;
+        color: var(--color-theme);
+        text-transform: uppercase;
+        margin: 0 0 30px;
+        padding: 0;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 43px;
+        line-height: 52px;
+        text-align: center;
+        color: var(--color-text);
+        margin: 0 0 37px;
+        padding: 0;
+    }
+    &__description {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: var(--color-text-second);
+        margin: 0 0 40px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 70px;
+        &__item {
+            background-color: #fff;
+            box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.04);
+            padding: 30px 30px 43px;
+            text-align: center;
+            &__image {
+                width: 100%;
+                height: 120px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+            }
+            &__title {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 26px;
+                color: var(--color-text);
+                margin: 0 0 5px;
+            }
+            &__description {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25.6px;
+                color: var(--color-text-second);
+                margin: 0;
+                a {
+                    text-decoration: underline;
+                    color: var(--color-text);
+                    transition: all 150ms;
+                    &:hover {
+                        color: var(--color-theme);
+                    }
+                }
+            }
+        }
+    }
+}

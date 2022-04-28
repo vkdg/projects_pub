@@ -1,0 +1,147 @@
+.HowItWorks {
+    padding: 120px 0 50px;
+    background-color: var(--color-howitworks-background);
+    &__wrapper {
+        max-width: var(--width-container);
+        padding: var(--padding-container);
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        &__subtitle {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: var(--color-theme);
+            text-transform: uppercase;
+            margin: 0 0 26px;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 44px;
+            line-height: 52px;
+            color: white;
+            margin: 0 0 15px;
+            text-align: center;
+        }
+        &__caption {
+            font-size: 19px;
+            line-height: 30px;
+            max-width: 713px;
+            text-align: center;
+            color: var(--color-text-on-dark);
+            margin: 0 0 63px;
+        }
+    }
+
+    &__steps {
+        max-width: 1100px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto 35px;
+        grid-gap: 122px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            &__number {
+                margin: 0 0 35px;
+                position: relative;
+                &__1, &__2, &__3 {
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: -15px;
+                        left: -10px;
+                        width: 60px;
+                        height: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: contain;
+                        z-index: 3;
+                    }
+                }
+                &__1 {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: -5px;
+                        left: 0;
+                        background-image: url('../../resources/how-it-works-line.svg');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: contain;
+                        width: 840px;
+                        height: 40px;
+                        z-index: 1;
+                    }
+                    &:after {
+                        background-image: url('../../resources/how-it-works-1.svg');
+                        left: -30px;
+                    }
+                }
+                &__2 {
+                    &:after {
+                        background-image: url('../../resources/how-it-works-2.svg');
+                    }
+                }
+                &__3 {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: -190px;
+                        left: 10px;
+                        background-image: url('../../resources/how-it-works-line-end.svg');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: contain;
+                        width: 300px;
+                        height: 300px;
+                    }
+                    &:after {
+                        background-image: url('../../resources/how-it-works-3.svg');
+                        left: -3px;
+                    }
+                }
+                &__ellipse {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 10em;
+                    background-color: #5A6482;
+                    display: block;
+                    z-index: 2;
+                    position: relative;
+                }
+            }
+            &__title {
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 22px;
+                color: #fff;
+                text-align: center;
+                margin: 0 0 8px;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 26px;
+                color: var(--color-text-on-dark);
+                text-align: center;
+            }
+        }
+    }
+
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

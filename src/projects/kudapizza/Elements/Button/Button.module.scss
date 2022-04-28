@@ -1,0 +1,17 @@
+.Button {
+    flex-shrink: 0;
+    border-radius: 6px;
+    &__primary {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 13px 32px;
+        font-size: 16px;
+        line-height: 22px;
+        transition: all 150ms ease-in-out;
+        &:hover {
+            cursor: pointer;
+            background-color: var(--primary-color-hover);
+        }
+    }
+}

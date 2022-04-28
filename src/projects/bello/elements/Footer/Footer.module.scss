@@ -1,0 +1,107 @@
+.Footer {
+    &__wrapper {
+        max-width: var(--width-container);
+        padding: var(--padding-container);
+        margin: 0 auto;
+    }
+    &__top {
+        background-color: white;
+        padding: 75px 0 40px;
+        &__content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            &__company {
+                &__logo {
+                    width: 95px;
+                    height: 35px;
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    background-size: contain;
+                    background-image: url('../../resources/bello-logo.svg');
+                    display: block;
+                }
+                &__description {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: var(--color-text-second);
+                    max-width: 320px;
+                    margin: 33px 0 22px;
+                }
+                &__social {
+                    margin-top: 27px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 34px;
+                }
+            }
+            &__navigation {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 103px;
+                &__title {
+                    color: var(--color-text);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    margin-bottom: 22px;
+                }
+                &__link {
+                    color: var(--color-text-second);
+                    text-decoration: none;
+                    display: block;
+                    margin-bottom: 19px;
+                    &:last-child { margin-bottom: 0; }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom {
+        padding: 18px 0;
+        background-color: var(--color-footer-bottom-background);
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__copyright {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            color: var(--color-text-second);
+        }
+    }
+
+
+    &__social {
+        &__facebook, &__instagram, &__youtube, &__linkedin, &__tiktok {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 26px;
+            height: 18px;
+        }
+        &__facebook {
+            background-image: url('../../resources/social-facebook.svg');
+        }
+        &__instagram {
+            background-image: url('../../resources/social-instagram.svg');
+        }
+        &__youtube {
+            background-image: url('../../resources/social-youtube.svg');
+        }
+        &__linkedin {
+            background-image: url('../../resources/social-linkedin.svg');
+        }
+        &__tiktok {
+            background-image: url('../../resources/social-tiktok.svg');
+        }
+    }
+}

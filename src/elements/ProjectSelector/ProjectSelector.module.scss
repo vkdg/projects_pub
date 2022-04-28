@@ -1,0 +1,95 @@
+.ProjectSelector {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: #fafafa;
+    border-top: 1px solid #f0f0f0;
+    z-index: 1000;
+    &__wrapper {
+        box-sizing: border-box;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        min-height: 50px;
+        font-size: 14px;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    &__list {
+        display: none;
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+        background-color: white;
+        width: 300px;
+        box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
+        border-radius: 3px;
+        border: 1px solid var(--border-color);
+        overflow: auto;
+        max-height: 300px;
+        &__item {
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 100ms;
+            p {
+                margin: 3px 0 0;
+                padding: 0;
+                line-height: 1.25;
+                color: var(--text-color-grey);
+                font-size: 10px;
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid var(--border-color);
+            }
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+        }
+        &__open {
+            display: block;
+        }
+    }
+    &__button {
+        background-color: var(--accent-color);
+        padding: 10px 15px;
+        border-radius: 3px;
+        color: white;
+        border: none;
+        transition: all 150ms;
+        user-select: none;
+        font-size: 12px;
+        line-height: 1;
+        font-weight: bold;
+        i {
+            margin-right: 5px;
+            width: 12.25px;
+            text-align: center;
+            font-size: 16px;
+        }
+        &__active {
+            background-color: var(--accent-color-hover-10);
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: var(--accent-color-hover-5);
+        }
+    }
+    &__back {
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--accent-color);
+        text-decoration: none;
+        padding: 7px 0;
+        line-height: 1;
+        transition: all 150ms;
+        &:hover {
+            cursor: pointer;
+            color: var(--accent-color-hover-5);
+            text-decoration: underline;
+        }
+    }
+}

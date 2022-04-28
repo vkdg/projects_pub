@@ -1,0 +1,20 @@
+.HeaderNavigation {
+    display: flex;
+    gap: 32px;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 150ms ease-in-out;
+    &__link {
+        color: var(--text-color);
+        text-decoration: none;
+        transition: all 150ms ease-in-out;
+        &:hover {
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+    }
+    &__show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

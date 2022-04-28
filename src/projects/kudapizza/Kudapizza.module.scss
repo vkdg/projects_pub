@@ -1,0 +1,37 @@
+@import url('./fonts.module.scss');
+
+$body-background-color: #F9F9F9;
+$border-color: #F0F0F0;
+$text-color: #191919;
+$grey-color: #A5A5A5;
+
+$primary-color: #FF7010;
+$primary-color-hover: darken($primary-color, 5);
+$second-color: #E23535;
+$second-color-hover: darken($second-color, 5);
+
+.Kudapizza__wrapper {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--body-background-color);
+}
+
+.Kudapizza {
+    box-sizing: border-box; 
+    &__headerFixed {
+        margin-top: 100px;
+    }  
+}
+
+:root {
+    --text-color: #{$text-color};
+    --grey-color: #{$grey-color};
+    --border-color: #{$border-color};
+    --body-background-color: #{$body-background-color};
+    --primary-color: #{$primary-color};
+    --primary-color-hover: #{$primary-color-hover};
+    --second-color: #{$second-color};
+    --second-color-hover: #{$second-color-hover};
+}

@@ -1,0 +1,87 @@
+.MeetsService {
+    padding: 150px 0 160px;
+    &__wrapper {
+        max-width: var(--width-container);
+        padding: var(--padding-container);
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        grid-gap: 75px;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+        &__right {
+            position: relative;
+        }
+    }
+
+    &__subtitle {
+        color: var(--color-theme);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16.8px;
+        text-transform: uppercase;
+        margin: 0 0 27px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 52px;
+        color: var(--color-text);
+        margin: 0 0 35px;
+        padding: 0;
+    }
+    &__description {
+        max-width: 483px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: var(--color-text-second);
+        margin: 0 0 15px;
+    }
+    &__image {
+        position: relative;
+        img {
+            max-width: 100%;
+            z-index: 1;
+            position: relative;
+        }
+        &__message {
+            padding: 20px 25px;
+            box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
+            background-color: #fff;
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: -25px;
+            left: -60px;
+            z-index: 2;
+            margin: 0;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 27.6px;
+        }
+        &:before {
+            content: '';
+            width: 195px;
+            height: 124px;
+            background-image: url('../../resources/dots.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            position: absolute;
+            top: -45px;
+            left: -45px;
+            z-index: -1;
+        }
+    }
+}

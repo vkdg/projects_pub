@@ -1,0 +1,40 @@
+.Location {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    border-radius: 24px;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1002;
+    transform: scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 150ms ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    &__visible {
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: auto;
+    }
+    &__close {
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        background-image: url('../../../resources/svg/close-modal.svg');
+        position: absolute;
+        top: 0px;
+        right: -50px;
+        transition: all 150ms ease-in-out;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+}

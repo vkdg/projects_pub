@@ -1,0 +1,51 @@
+.GettingStarted {
+    background-color: var(--color-getting-background);
+    &__wrapper {
+        max-width: var(--width-container);
+        padding: var(--padding-container);
+        margin: 0 auto;
+    }
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 100px 0;
+        &:after, &:before {
+            content: '';
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+        }
+        &:before {
+            bottom: 0;
+            left: 0;
+            background-image: url('../../resources/getting-image-1.png');
+            width: 571px;
+            height: 446px;
+        }
+        &:after {
+            bottom: 0;
+            right: 0;
+            background-image: url('../../resources/getting-image-2.png');
+            width: 76px;
+            height: 205px;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 52px;
+        color: var(--color-text);
+        margin: 0 0 8px;
+        max-width: 714px;
+    }
+    &__text {
+        font-size: 19px;
+        line-height: 30px;
+        color: var(--color-text-second);
+        margin: 0 0 39px;
+        max-width: 714px;
+    }
+}

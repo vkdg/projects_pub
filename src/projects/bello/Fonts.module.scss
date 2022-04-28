@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans Thin'), local('WorkSans-Thin'), url('./resources/fonts/Worksansthin.woff2') format('woff2'), url('./resources/fonts/Worksansthin.woff') format('woff'), url('./resources/fonts/Worksansthin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans ExtraLight'), local('WorkSans-ExtraLight'), url('./resources/fonts/Worksansextralight.woff2') format('woff2'), url('./resources/fonts/Worksansextralight.woff') format('woff'), url('./resources/fonts/Worksansextralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans Light'), local('WorkSans-Light'), url('./resources/fonts/Worksanslight.woff2') format('woff2'), url('./resources/fonts/Worksanslight.woff') format('woff'), url('./resources/fonts/Worksanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans'), local('WorkSans-Regular'), url('./resources/fonts/Worksans.woff2') format('woff2'), url('./resources/fonts/Worksans.woff') format('woff'), url('./resources/fonts/Worksans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans Medium'), local('WorkSans-Medium'), url('./resources/fonts/Worksansmedium.woff2') format('woff2'), url('./resources/fonts/Worksansmedium.woff') format('woff'), url('./resources/fonts/Worksansmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans SemiBold'), local('WorkSans-SemiBold'), url('./resources/fonts/Worksanssemibold.woff2') format('woff2'), url('./resources/fonts/Worksanssemibold.woff') format('woff'), url('./resources/fonts/Worksanssemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans Bold'), local('WorkSans-Bold'), url('./resources/fonts/Worksansbold.woff2') format('woff2'), url('./resources/fonts/Worksansbold.woff') format('woff'), url('./resources/fonts/Worksansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans ExtraBold'), local('WorkSans-ExtraBold'), url('./resources/fonts/Worksansextrabold.woff2') format('woff2'), url('./resources/fonts/Worksansextrabold.woff') format('woff'), url('./resources/fonts/Worksansextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans Black'), local('WorkSans-Black'), url('./resources/fonts/Worksansblack.woff2') format('woff2'), url('./resources/fonts/Worksansblack.woff') format('woff'), url('./resources/fonts/Worksansblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

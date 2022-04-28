@@ -1,0 +1,90 @@
+@import url('./Fonts.module.scss');
+
+$color-accent: #007188;
+$color-accent-dark: #126F86;
+$color-accent-dark-hover: darken($color-accent-dark, 5);
+$color-text: #1D253C;
+$color-text-second: #5A6482;
+$color-text-on-dark: #ACB4BF;
+$color-theme: #F46752;
+$color-theme-hover-5: darken($color-theme, 5);
+$color-theme-hover-10: darken($color-theme, 10);
+$color-footer-bottom-background: #f8f8f8;
+
+$color-getting-background: #E5F3FE;
+$color-learningcenter-background: #F9F5F2;
+$color-howitworks-background: #363839;
+$color-safehands-background: #F8F8F8;
+
+$color-card-1: rgba(169, 216, 255, 0.3);
+$color-card-text-1: #7CAFDD;
+$color-card-2: rgba(255, 174, 104, 0.3);
+$color-card-text-2: #E79751;
+$color-card-3: rgba(250, 82, 64, 0.3);
+$color-card-text-3: #FA5240;
+$color-card-4: rgba(18, 111, 133, 0.3);
+$color-card-text-4: #126F85;
+
+
+.Bello {
+    --color-accent: #{$color-accent};
+    --color-accent-dark: #{$color-accent-dark};
+    --color-accent-dark-hover: #{$color-accent-dark-hover};
+    --color-text: #{$color-text};
+    --color-text-second: #{$color-text-second};
+    --color-text-on-dark: #{$color-text-on-dark};
+    --color-theme: #{$color-theme};
+    --color-theme-hover-5: #{$color-theme-hover-5};
+    --color-theme-hover-10: #{$color-theme-hover-10};
+
+    --color-getting-background: #{$color-getting-background};
+    --color-learningcenter-background: #{$color-learningcenter-background};
+    --color-footer-bottom-background: #{$color-footer-bottom-background};
+    --color-howitworks-background: #{$color-howitworks-background};
+    --color-safehands-background: #{$color-safehands-background};
+    
+    --color-card-background-1: #{$color-card-1};
+    --color-card-background-2: #{$color-card-2};
+    --color-card-background-3: #{$color-card-3};
+    --color-card-background-4: #{$color-card-4};
+    --color-card-text-1: #{$color-card-text-1};
+    --color-card-text-2: #{$color-card-text-2};
+    --color-card-text-3: #{$color-card-text-3};
+    --color-card-text-4: #{$color-card-text-4};
+
+    --width-container: 1440px;
+    --padding-container: 0 60px;
+
+
+    color: var(--color-text);
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;    
+    &__mobile {
+        width: 100vw;
+        height: calc(100vh - 35px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 18px;
+        color: var(--color-text-second);
+        &__logo {
+            width: 95px;
+            height: 35px;
+            background-image: url('./resources/bello-logo.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+        &__back {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 15px 20px;
+            background-color: var(--color-theme);
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}

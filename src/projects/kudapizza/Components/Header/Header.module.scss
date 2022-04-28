@@ -1,0 +1,102 @@
+.Header {
+    background-color: #fff;
+    z-index: 1000;
+    position: relative;
+    &__mini, &__main {
+        border-bottom: 1px solid var(--border-color);
+    }
+    &__mini {
+        padding: 10px 0;
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__left {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 40px;
+        }
+        &__right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 40px;
+        }
+        &__deliveryTime {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            color: var(--text-color);
+            strong {
+                font-weight: 600;
+            }
+        }
+        &__worktime {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            color: var(--text-color);
+        }
+        &__login {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            &__icon {
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                background-image: url('../../resources/svg/account.svg');
+            }
+        }
+    }
+    &__main {
+        padding: 16px 0;
+        background-color: white;
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 64px;
+        }
+        &__logo {
+            height: 32px;
+            background-image: url('../../resources/svg/logo.svg');
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: contain;
+            padding-left: calc(32px + 12px);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 150ms ease-in-out;
+            flex-shrink: 0;
+            &:hover {
+                cursor: pointer;
+                color: var(--primary-color);
+            }
+        }
+        &__navigation {
+            flex-grow: 1;
+        }
+        &__basket {
+            flex-shrink: 0;
+        }
+        &__fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}

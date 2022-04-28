@@ -1,0 +1,77 @@
+.Button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    background-image: url('../../../resources/button-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: auto;
+    background-color: var(--color-theme);
+    color: white;
+    padding: 21px 60px 21px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
+    transition: all 150ms;
+    &:hover {
+        background-color: var(--color-theme-hover-5);
+        cursor: pointer;
+    }
+    &__bordered {
+        background: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-text);
+        padding: 13px 30px;
+        border: 1px solid rgba(29, 37, 60, 0.2);
+        &:hover {
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+            color: white;
+        }
+    }
+    &__inline {
+        background: none;
+        background-image: url('../../../resources/button-arrow-blue.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right center;
+        color: var(--color-accent-dark);        
+        padding: 0;
+        border: none;
+        text-transform: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21.6px;
+        padding-right: 36px;
+        border-radius: 0;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            background-color: transparent;
+        }
+    }
+    &__inline-card-1 {
+        @extend .Button__inline;
+        color: var(--color-card-1);
+        background-image: url('../../../resources/button-arrow-card-1.svg');
+    }
+    &__inline-card-2 {
+        @extend .Button__inline;
+        color: var(--color-card-2);
+        background-image: url('../../../resources/button-arrow-card-2.svg');
+    }
+    &__inline-card-3 {
+        @extend .Button__inline;
+        color: var(--color-card-3);
+        background-image: url('../../../resources/button-arrow-card-3.svg');
+    }
+    &__inline-card-4 {
+        @extend .Button__inline;
+        color: var(--color-card-4);
+        background-image: url('../../../resources/button-arrow-card-4.svg');
+    }
+}
