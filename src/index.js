@@ -18,7 +18,6 @@ const application = (
           <Route index element={<Mainpage />} />
           <Route path="/bello" element={<Bello />} />
           <Route path="/kudapizza/*" element={<Kudapizza />} />
-          <Route path="/messenger/*" element={<Messenger />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
